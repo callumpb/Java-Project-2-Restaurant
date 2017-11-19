@@ -4,7 +4,7 @@ package com.example.user.restaurant;
  * Created by user on 19/11/2017.
  */
 
-//may change to a hash map?
+//may change later to a hash map?
 public class Ingredient {
     private String name;
 
