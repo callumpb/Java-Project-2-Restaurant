@@ -6,6 +6,7 @@ import java.util.ArrayList;
  * Created by user on 19/11/2017.
  */
 
+//method totalPrice(), clearTable()
 public class Table {
     private ArrayList<Patron> patrons;
 
