@@ -13,5 +13,5 @@ public class Table {
         this.patrons = new ArrayList<Patron>();
     }
 
-    
+
 }
