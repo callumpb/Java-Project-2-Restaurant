@@ -14,19 +14,17 @@ public class Restaurant {
 
     private String name;
     private float budget;
-
-    //change Name.Table
-    private ArrayList<Name.Table> tables;
+    private ArrayList<Table> tables;
     Menu menu;
 
-    //Menu menu;
+
 
     public Restaurant(String name, float budget) {
         this.name = name;
         this.budget = budget;
-        //change <>
-        this.tables = new ArrayList<Name.Table>();
+        this.tables = new ArrayList<Table>();
         Menu menu = new Menu();
+        this.menu = menu;
     }
 
 
