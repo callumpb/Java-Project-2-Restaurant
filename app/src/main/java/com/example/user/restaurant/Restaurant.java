@@ -10,6 +10,9 @@ import java.util.ArrayList;
  * Created by user on 17/11/2017.
  */
 
+//NOTES:
+    //MENU menu not connected to Menu class?
+
 public class Restaurant {
 
     private String name;
@@ -27,6 +30,9 @@ public class Restaurant {
         this.menu = menu;
     }
 
+    public String getName() {
+        return this.name;
+    }
 
 }
 
