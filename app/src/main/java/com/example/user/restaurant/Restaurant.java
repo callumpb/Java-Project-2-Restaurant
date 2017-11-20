@@ -33,9 +33,13 @@ public class Restaurant {
     public String getName() {
         return this.name;
     }
-    
+
     public float getBudget() {
         return budget;
+    }
+
+    public int tableCount() {
+        return tables.size();
     }
 }
 

@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
+
 /**
  * Created by user on 20/11/2017.
  */
@@ -25,5 +26,10 @@ public class RestaurantTest {
     @Test
     public void hasBudget() {
         assertEquals(1000, restaurant.getBudget());
+    }
+
+    @Test
+    public void tableCountIs0() {
+        assertEquals(0, restaurant.tableCount());
     }
 }
