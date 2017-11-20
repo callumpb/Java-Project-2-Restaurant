@@ -16,4 +16,8 @@ public class Dish {
         this.price = price;
         this.ingredients = new ArrayList<Ingredient>();
     }
+
+    public String getName() {
+        return name;
+    }
 }
