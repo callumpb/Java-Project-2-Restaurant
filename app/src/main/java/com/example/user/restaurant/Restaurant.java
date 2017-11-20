@@ -49,7 +49,7 @@ public class Restaurant {
         tables.remove(table);
     }
 
-//    //is this method needed?
+    //is this method needed?
 //    public com.example.user.restaurant.Menu getMenu() {
 //        return this.menu;
 //    }

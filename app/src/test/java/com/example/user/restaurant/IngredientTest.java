@@ -21,4 +21,5 @@ public class IngredientTest {
     public void hasName() {
         assertEquals("Salad", ingredient.getName());
     }
+
 }

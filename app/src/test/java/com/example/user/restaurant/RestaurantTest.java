@@ -13,11 +13,13 @@ import static org.junit.Assert.assertEquals;
 public class RestaurantTest {
     Restaurant restaurant;
     Table table;
+    Menu menu;
 
     @Before
     public void before() {
         this.restaurant = new Restaurant("Mario's", 0);
         this.table = new Table();
+        this.menu = new Menu();
     }
 
     @Test
@@ -58,6 +60,6 @@ public class RestaurantTest {
     //is this + Restaurant method needed?
 //    @Test
 //    public void canHaveMenu() {
-//        assertEquals(Menu.class, restaurant.getMenu());
+//        assertEquals(menu, restaurant.getMenu());
 //    }
 }
