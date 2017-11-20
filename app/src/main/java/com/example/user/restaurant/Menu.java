@@ -12,4 +12,8 @@ public class Menu {
     public Menu() {
         this.dishes = new ArrayList<Dish>();
     }
+
+    public int dishCount() {
+        return this.dishes.size();
+    }
 }

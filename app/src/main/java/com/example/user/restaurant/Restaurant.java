@@ -35,16 +35,16 @@ public class Restaurant {
     }
 
     public float getBudget() {
-        return budget;
+        return this.budget;
     }
 
     public int tableCount() {
-        return tables.size();
+        return this.tables.size();
     }
 
     //is this method needed?
     public com.example.user.restaurant.Menu getMenu() {
-        return menu;
+        return this.menu;
     }
 }
 
