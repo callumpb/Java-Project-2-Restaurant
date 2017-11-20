@@ -1,8 +1,7 @@
 package com.example.user.restaurant;
 
-import com.sun.tools.javac.util.Name;
-
-import java.awt.Menu;
+//import com.sun.tools.javac.util.Name;
+//import java.awt.Menu;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
@@ -24,7 +23,7 @@ public class Restaurant {
 
     public Restaurant(String name, float budget) {
         this.name = name;
-        //this.budget = 0;
+        //this.budget = 1000;
         this.budget = budget;
         this.tables = new ArrayList<Table>();
         this.menu = menu;
@@ -42,9 +41,16 @@ public class Restaurant {
         return this.tables.size();
     }
 
+    public void addTableToTableCount(Table table) {
+        tables.add(table);
+    }
+
+
     //is this method needed?
     public com.example.user.restaurant.Menu getMenu() {
         return this.menu;
     }
+
+
 }
 

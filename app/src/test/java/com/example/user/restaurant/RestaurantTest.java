@@ -12,10 +12,12 @@ import static org.junit.Assert.assertEquals;
 
 public class RestaurantTest {
     Restaurant restaurant;
+    Table table;
 
     @Before
     public void before() {
         this.restaurant = new Restaurant("Mario's", 1000);
+        this.table = new Table();
     }
 
     @Test
@@ -25,7 +27,7 @@ public class RestaurantTest {
 
     @Test
     public void hasBudget() {
-        assertEquals(1000, restaurant.getBudget());
+        assertEquals(1000, restaurant.getBudget(), 0.01);
     }
 
     @Test
@@ -35,8 +37,11 @@ public class RestaurantTest {
 
     @Test
     public void canAddTable() {
+        restaurant.addTableToTableCount(table);
         assertEquals(1, restaurant.tableCount());
     }
+
+    
 
     //is this + Restaurant method needed?
     @Test
