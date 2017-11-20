@@ -18,15 +18,15 @@ public class Restaurant {
     private String name;
     private float budget;
     private ArrayList<Table> tables;
-    Menu menu;
+    com.example.user.restaurant.Menu menu;
 
 
 
     public Restaurant(String name, float budget) {
         this.name = name;
+        //this.budget = 0;
         this.budget = budget;
         this.tables = new ArrayList<Table>();
-        Menu menu = new Menu();
         this.menu = menu;
     }
 
