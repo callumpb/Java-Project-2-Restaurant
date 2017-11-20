@@ -41,5 +41,10 @@ public class Restaurant {
     public int tableCount() {
         return tables.size();
     }
+
+    //is this method needed?
+    public com.example.user.restaurant.Menu getMenu() {
+        return menu;
+    }
 }
 

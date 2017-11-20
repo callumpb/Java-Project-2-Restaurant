@@ -32,4 +32,15 @@ public class RestaurantTest {
     public void tableCountIs0() {
         assertEquals(0, restaurant.tableCount());
     }
+
+    @Test
+    public void canAddTable() {
+        assertEquals(1, restaurant.tableCount());
+    }
+
+    //is this + Restaurant method needed?
+    @Test
+    public void canHaveMenu() {
+        assertEquals(Menu.class, restaurant.getMenu());
+    }
 }
