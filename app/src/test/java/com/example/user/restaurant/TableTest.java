@@ -11,15 +11,23 @@ import static org.junit.Assert.assertEquals;
 
 public class TableTest {
     Table table;
+    Patron patron;
 
     @Before
     public void before() {
         this.table = new Table();
+        this.patron = new Patron();
     }
 
     @Test
     public void tablePatronCount() {
-        assertEquals(0, table.PatronCount());
+        assertEquals(0, table.patronCount());
+    }
+
+    @Test
+    public void addPatronToTablePatronCount() {
+        table.addPatron(patron);
+        assertEquals(1, table.patronCount());
     }
 
 }

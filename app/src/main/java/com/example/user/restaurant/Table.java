@@ -14,7 +14,11 @@ public class Table {
         this.patrons = new ArrayList<Patron>();
     }
 
-    public int PatronCount() {
+    public int patronCount() {
         return this.patrons.size();
+    }
+
+    public void addPatron(Patron patron) {
+        patrons.add(patron);
     }
 }
