@@ -12,4 +12,16 @@ public class Patron {
     public Patron() {
         this.order = new ArrayList<Dish>();
     }
+
+    public int orderTotal() {
+        return this.order.size();
+    }
+
+    public void addOrder(Dish dish) {
+        order.add(dish);
+    }
+
+    public void removeOrder(Dish dish) {
+        order.remove(dish);
+    }
 }

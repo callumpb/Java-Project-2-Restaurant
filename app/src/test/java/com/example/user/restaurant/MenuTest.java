@@ -16,8 +16,8 @@ public class MenuTest {
 
     @Before
     public void before() {
-        menu = new Menu();
-        dish = new Dish("Chicken Salad", 7);
+        this.menu = new Menu();
+        this.dish = new Dish("Chicken Salad", 7);
     }
 
     @Test
