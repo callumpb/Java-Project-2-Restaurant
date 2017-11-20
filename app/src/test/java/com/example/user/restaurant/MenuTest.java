@@ -38,5 +38,5 @@ public class MenuTest {
         menu.removeDishFromMenu(dish);
         assertEquals(0, menu.dishCount());
     }
-    
+
 }
