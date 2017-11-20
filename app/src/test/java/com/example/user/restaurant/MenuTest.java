@@ -21,4 +21,9 @@ public class MenuTest {
     public void menuDishCount() {
         assertEquals(0, menu.dishCount());
     }
+
+    @Test
+    public void canAddDishToMenu() {
+        assertEquals(1, menu.dishCount());
+    }
 }
