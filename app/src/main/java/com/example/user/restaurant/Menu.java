@@ -18,6 +18,10 @@ public class Menu {
     }
 
     public void addDishToMenu(Dish dish) {
-         dishes.add(dish);
+        dishes.add(dish);
+    }
+
+    public void removeDishFromMenu(Dish dish) {
+        dishes.remove(dish);
     }
 }

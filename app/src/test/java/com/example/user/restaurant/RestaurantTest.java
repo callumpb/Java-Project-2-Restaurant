@@ -16,7 +16,7 @@ public class RestaurantTest {
 
     @Before
     public void before() {
-        this.restaurant = new Restaurant("Mario's", 1000);
+        this.restaurant = new Restaurant("Mario's", 0);
         this.table = new Table();
     }
 
@@ -27,8 +27,14 @@ public class RestaurantTest {
 
     @Test
     public void hasBudget() {
-        assertEquals(1000, restaurant.getBudget(), 0.01);
+        assertEquals(0, restaurant.getBudget(), 0.01);
     }
+
+//    @Test
+//    //the amount that a patron pays for a dish
+//    public void canAddToBudget() {
+//
+//    }
 
     @Test
     public void tableCountIs0() {
@@ -50,8 +56,8 @@ public class RestaurantTest {
     }
 
     //is this + Restaurant method needed?
-    @Test
-    public void canHaveMenu() {
-        assertEquals(Menu.class, restaurant.getMenu());
-    }
+//    @Test
+//    public void canHaveMenu() {
+//        assertEquals(Menu.class, restaurant.getMenu());
+//    }
 }
