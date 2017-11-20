@@ -25,4 +25,8 @@ public class Table {
     public void removePatron(Patron patron) {
         patrons.remove(patron);
     }
+
+    public void clearTable(Patron patron) {
+        patrons.clear();
+    }
 }

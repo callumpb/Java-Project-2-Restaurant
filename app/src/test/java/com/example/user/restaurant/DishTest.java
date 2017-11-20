@@ -28,8 +28,5 @@ public class DishTest {
         assertEquals(7, dish.getPrice(), 0.01);
     }
 
-//    @Test
-//    public void dishIngredientCount() {
-//        assertEquals(0, );
-//    }
+
 }

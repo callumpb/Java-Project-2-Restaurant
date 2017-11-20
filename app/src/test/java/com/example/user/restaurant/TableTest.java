@@ -37,4 +37,17 @@ public class TableTest {
         table.removePatron(patron);
         assertEquals(0, table.patronCount());
     }
+
+    @Test
+    public void setTableTo0Patrons() {
+        table.addPatron(patron);
+        assertEquals(1, table.patronCount());
+        table.clearTable(patron);
+        assertEquals(0, table.patronCount());
+    }
+
+//    @Test
+//    public void totalBillForTableIs0() {
+//
+//    }
 }
