@@ -41,7 +41,13 @@ public class RestaurantTest {
         assertEquals(1, restaurant.tableCount());
     }
 
-    
+    @Test
+    public void canRemoveTable() {
+        restaurant.addTableToTableCount(table);
+        assertEquals(1, restaurant.tableCount());
+        restaurant.removeTableFromTableCount(table);
+        assertEquals(0, restaurant.tableCount());
+    }
 
     //is this + Restaurant method needed?
     @Test

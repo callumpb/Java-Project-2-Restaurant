@@ -45,12 +45,14 @@ public class Restaurant {
         tables.add(table);
     }
 
+    public void removeTableFromTableCount(Table table) {
+        tables.remove(table);
+    }
 
     //is this method needed?
     public com.example.user.restaurant.Menu getMenu() {
         return this.menu;
     }
-
 
 }
 
