@@ -22,4 +22,9 @@ public class DishTest {
     public void hasName() {
         assertEquals("Chicken Salad", dish.getName());
     }
+
+    @Test
+    public void hasPrice() {
+        assertEquals(7, dish.getPrice(), 0.01);
+    }
 }
