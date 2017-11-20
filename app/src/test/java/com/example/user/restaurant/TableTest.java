@@ -30,4 +30,11 @@ public class TableTest {
         assertEquals(1, table.patronCount());
     }
 
+    @Test
+    public void removePatronFromTablePatronCount() {
+        table.addPatron(patron);
+        assertEquals(1, table.patronCount());
+        table.removePatron(patron);
+        assertEquals(0, table.patronCount());
+    }
 }

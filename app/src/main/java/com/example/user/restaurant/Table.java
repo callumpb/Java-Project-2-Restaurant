@@ -21,4 +21,8 @@ public class Table {
     public void addPatron(Patron patron) {
         patrons.add(patron);
     }
+
+    public void removePatron(Patron patron) {
+        patrons.remove(patron);
+    }
 }
