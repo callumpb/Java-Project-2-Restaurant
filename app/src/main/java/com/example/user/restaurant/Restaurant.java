@@ -1,8 +1,5 @@
 package com.example.user.restaurant;
 
-//import com.sun.tools.javac.util.Name;
-//import java.awt.Menu;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /**
@@ -17,11 +14,11 @@ public class Restaurant {
     private String name;
     private float budget;
     private ArrayList<Table> tables;
-    com.example.user.restaurant.Menu menu;
+    Menu menu;
 
 
 
-    public Restaurant(String name, float budget) {
+    public Restaurant(String name, float budget, Menu menu) {
         this.name = name;
         //this.budget = 1000;
         this.budget = budget;
@@ -48,6 +45,25 @@ public class Restaurant {
     public void removeTableFromTableCount(Table table) {
         tables.remove(table);
     }
+
+    public int totalNumberOfPeople() {
+        int sum = 0;
+        for(Table table : tables) {
+            sum = sum + table.patronCount();
+        }
+        return sum;
+    }
+
+    public int getTotalValueOfAllTables() {
+        int sum = 0;
+        for(Table table : tables) {
+            sum = sum + table.totalBill();
+        }
+        return sum;
+    }
+
+
+
 
     //is this method needed?
 //    public com.example.user.restaurant.Menu getMenu() {

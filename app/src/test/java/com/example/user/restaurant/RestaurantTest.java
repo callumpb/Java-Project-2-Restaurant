@@ -3,6 +3,9 @@ package com.example.user.restaurant;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 import static org.junit.Assert.assertEquals;
 
 
@@ -12,14 +15,35 @@ import static org.junit.Assert.assertEquals;
 
 public class RestaurantTest {
     Restaurant restaurant;
-    Table table;
+    Table table, table1;
+    Ingredient chicken, salad;
+    Dish chickenSalad;
     Menu menu;
+    Patron patron1;
+
 
     @Before
     public void before() {
-        this.restaurant = new Restaurant("Mario's", 0);
-        this.table = new Table();
+
+        //Create a few ingredients
+        //Create a few dishes
+        //Create a new menu
+        //Add some dishes to menu
+        //Create new restaurant and pass it the menu
+
+        //Create a few tables
+        //Add tables to restaurant
+        //Add patron
+
         this.menu = new Menu();
+        this.restaurant = new Restaurant("Mario's", 0, menu);
+        this.table = new Table();
+
+        // patron
+        patron1 = new Patron();
+        this.table.addPatron(patron1);
+        this.table.addPatron(patron1);
+        this.table.addPatron(patron1);
     }
 
     @Test
@@ -30,6 +54,13 @@ public class RestaurantTest {
     @Test
     public void hasBudget() {
         assertEquals(0, restaurant.getBudget(), 0.01);
+    }
+
+    @Test
+    public void getNumberOfPatrons() {
+        this.restaurant.addTableToTableCount(table);
+        int totalPatrons = this.restaurant.totalNumberOfPeople();
+        assertEquals(3, totalPatrons);
     }
 
 //    @Test

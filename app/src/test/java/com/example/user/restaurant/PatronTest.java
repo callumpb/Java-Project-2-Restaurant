@@ -17,6 +17,7 @@ public class PatronTest {
     public void before() {
         this.patron = new Patron();
         this.dish = new Dish("Chicken Salad", 7);
+
     }
 
     @Test

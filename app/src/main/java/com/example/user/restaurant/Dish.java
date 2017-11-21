@@ -14,7 +14,11 @@ public class Dish {
     public Dish(String name, float price) {
         this.name = name;
         this.price = price;
-        this.ingredients = new ArrayList<Ingredient>();
+        this.ingredients = new ArrayList<>();
+    }
+
+    public void addIngredient(Ingredient ingredient) {
+        this.ingredients.add(ingredient);
     }
 
     public String getName() {

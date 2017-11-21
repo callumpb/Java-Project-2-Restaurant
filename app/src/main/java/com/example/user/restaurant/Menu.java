@@ -10,7 +10,7 @@ public class Menu {
     private ArrayList<Dish> dishes;
 
     public Menu() {
-        this.dishes = new ArrayList<Dish>();
+        this.dishes = new ArrayList<>();
     }
 
     public int dishCount() {
@@ -24,4 +24,6 @@ public class Menu {
     public void removeDishFromMenu(Dish dish) {
         dishes.remove(dish);
     }
+
+
 }

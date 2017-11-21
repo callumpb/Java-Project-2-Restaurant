@@ -48,6 +48,14 @@ public class TableTest {
 
 //    @Test
 //    public void totalBillForTableIs0() {
+//        patron.orderTotal();
+//        assertEquals(0, table.totalBill());
+//    }
+
+//    @Test
+//    public void setTotalBillForTableTo0() {
 //
 //    }
+
+
 }

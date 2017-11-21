@@ -16,6 +16,7 @@ public class DishTest {
     public void before() {
         //should new dish take ingredients objects?
         this.dish = new Dish("Chicken Salad", 7);
+        this.dish.addIngredient(new Ingredient("Chicken"));
     }
 
     @Test

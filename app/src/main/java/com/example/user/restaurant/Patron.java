@@ -24,4 +24,7 @@ public class Patron {
     public void removeOrder(Dish dish) {
         order.remove(dish);
     }
+
+    // for patron 1, I want to add a dish
+
 }

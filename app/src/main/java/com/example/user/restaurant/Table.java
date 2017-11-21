@@ -29,4 +29,23 @@ public class Table {
     public void clearTable(Patron patron) {
         patrons.clear();
     }
+
+    // for every patron at a table
+    // add the price of their dishes
+    // to the total sum
+    public int totalBill() {
+        int sum = 0;
+        for(Patron patron : patrons) {
+            sum = sum + patron.orderTotal();
+        }
+        return sum;
+    }
+
+//    public int getTotalValueOfAllTables() {
+//        int sum = 0;
+//        for(Table table : tables) {
+//            sum = sum + table.totalBill();
+//        }
+//        return sum;
+//    }
 }
