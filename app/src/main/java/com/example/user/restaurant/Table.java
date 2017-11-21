@@ -6,7 +6,6 @@ import java.util.ArrayList;
  * Created by user on 19/11/2017.
  */
 
-//method totalPrice(), clearTable()
 public class Table {
     private ArrayList<Patron> patrons;
 
@@ -30,9 +29,6 @@ public class Table {
         patrons.clear();
     }
 
-    // for every patron at a table
-    // add the price of their dishes
-    // to the total sum
     public float totalBill() {
         float sum = 0;
         for(Patron patron : patrons) {

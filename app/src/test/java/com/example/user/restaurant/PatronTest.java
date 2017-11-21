@@ -22,20 +22,28 @@ public class PatronTest {
 
     @Test
     public void orderTotalIs0() {
-        assertEquals(0, patron.orderTotal());
+        assertEquals(0, patron.orderTotal(), 0.01);
     }
+
+    @Test
+    public void patronOrderTotal() {
+        this.patron.addOrder(dish);
+        this.patron.orderTotal();
+        assertEquals(7, patron.orderTotal(), 0.01);
+    }
+
 
     @Test
     public void canAddToOrderTotal() {
         patron.addOrder(dish);
-        assertEquals(1, patron.orderTotal());
+        assertEquals(1, patron.orderTotal(), 0.01);
     }
 
     @Test
     public void canRemoveFromOrderTotal() {
         patron.addOrder(dish);
-        assertEquals(1, patron.orderTotal());
+        assertEquals(1, patron.orderTotal(), 0.01);
         patron.removeOrder(dish);
-        assertEquals(0, patron.orderTotal());
+        assertEquals(0, patron.orderTotal(), 0.01);
     }
 }
