@@ -54,8 +54,6 @@ public class Restaurant {
         return sum;
     }
 
-    //may still need changes
-    //test needed
     public float getTotalValueOfAllTables() {
         float sum = 0;
         for(Table table : tables) {

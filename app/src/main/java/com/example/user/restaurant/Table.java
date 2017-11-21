@@ -37,11 +37,4 @@ public class Table {
         return sum;
     }
 
-//    public int getTotalValueOfAllTables() {
-//        int sum = 0;
-//        for(Table table : tables) {
-//            sum = sum + table.totalBill();
-//        }
-//        return sum;
-//    }
 }

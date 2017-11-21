@@ -35,14 +35,14 @@ public class PatronTest {
     @Test
     public void canAddToTotalNumberOfOrders() {
         patron.addOrder(dish);
-        assertEquals(1, patron.totalOrders(), 0.01);
+        assertEquals(1, patron.totalOrders());
     }
 
     @Test
     public void canRemoveFromTotalNumberOfOrders() {
         patron.addOrder(dish);
-        assertEquals(1, patron.totalOrders(), 0.01);
+        assertEquals(1, patron.totalOrders());
         patron.removeOrder(dish);
-        assertEquals(0, patron.totalOrders(), 0.01);
+        assertEquals(0, patron.totalOrders());
     }
 }
