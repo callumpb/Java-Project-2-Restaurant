@@ -13,7 +13,7 @@ public class Patron {
         this.order = new ArrayList<Dish>();
     }
 
-    public int orderTotal() {
+    public int totalOrders() {
         return this.order.size();
     }
 
@@ -25,6 +25,14 @@ public class Patron {
         order.remove(dish);
     }
 
-    // for patron 1, I want to add a dish
+    //test needed
+    public float orderTotal() {
+        float sum = 0;
+        for(Dish dish : order) {
+            sum = sum + dish.getPrice();
+        }
+        return sum;
+    }
+
 
 }

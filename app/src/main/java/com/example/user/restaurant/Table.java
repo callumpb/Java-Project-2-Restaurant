@@ -33,10 +33,10 @@ public class Table {
     // for every patron at a table
     // add the price of their dishes
     // to the total sum
-    public int totalBill() {
-        int sum = 0;
+    public float totalBill() {
+        float sum = 0;
         for(Patron patron : patrons) {
-            sum = sum + patron.orderTotal();
+            sum+= patron.orderTotal();
         }
         return sum;
     }

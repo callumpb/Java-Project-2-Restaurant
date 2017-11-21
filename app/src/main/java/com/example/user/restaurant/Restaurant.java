@@ -46,7 +46,7 @@ public class Restaurant {
         tables.remove(table);
     }
 
-    public int totalNumberOfPeople() {
+    public int totalNumberOfPatrons() {
         int sum = 0;
         for(Table table : tables) {
             sum = sum + table.patronCount();
@@ -54,8 +54,10 @@ public class Restaurant {
         return sum;
     }
 
-    public int getTotalValueOfAllTables() {
-        int sum = 0;
+    //may still need changes
+    //test needed
+    public float getTotalValueOfAllTables() {
+        float sum = 0;
         for(Table table : tables) {
             sum = sum + table.totalBill();
         }

@@ -15,16 +15,15 @@ import static org.junit.Assert.assertEquals;
 
 public class RestaurantTest {
     Restaurant restaurant;
-    Table table, table1;
-    Ingredient chicken, salad;
-    Dish chickenSalad;
+    Table table;
+//    Ingredient chicken, salad;
+//    Dish chickenSalad;
     Menu menu;
     Patron patron1;
 
 
     @Before
     public void before() {
-
         //Create a few ingredients
         //Create a few dishes
         //Create a new menu
@@ -39,7 +38,7 @@ public class RestaurantTest {
         this.restaurant = new Restaurant("Mario's", 0, menu);
         this.table = new Table();
 
-        // patron
+
         patron1 = new Patron();
         this.table.addPatron(patron1);
         this.table.addPatron(patron1);
@@ -59,8 +58,13 @@ public class RestaurantTest {
     @Test
     public void getNumberOfPatrons() {
         this.restaurant.addTableToTableCount(table);
-        int totalPatrons = this.restaurant.totalNumberOfPeople();
+        int totalPatrons = this.restaurant.totalNumberOfPatrons();
         assertEquals(3, totalPatrons);
+    }
+
+    @Test
+    public void totalValueOfAllTables() {
+
     }
 
 //    @Test
