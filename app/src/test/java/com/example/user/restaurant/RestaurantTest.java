@@ -113,6 +113,17 @@ public class RestaurantTest {
         assertEquals(14 ,restaurant.getBudget(), 0.01);
 
     }
+
+    @Test
+    public void canPayBillWithoutIndex() {
+        this.table.addPatron(this.patron1);
+        this.patron1.addOrder(chickenSaladDish);
+        restaurant.payBillNoIndex(table);
+        assertEquals(7, restaurant.getBudget(), 0.01);
+    }
+
+
+
     //is this + Restaurant method test even needed?
 //    @Test
 //    public void canHaveMenu() {

@@ -50,6 +50,9 @@ public class Restaurant {
         return sum;
     }
 
+    // this method was originally going to be used
+    // to help add to budget.
+    // Will keep in case required later
     public float getTotalValueOfAllTables() {
         float sum = 0;
         for(Table table : tables) {
@@ -70,8 +73,14 @@ public class Restaurant {
         // clearing the table after paying bill
         table.clearTable();
     }
+       //pays bill without using index but the table
+       public void payBillNoIndex(Table table) {
+        float totalBill = table.totalBill();
+        this.budget += totalBill;
+          table.clearTable();
+        }
 
-    
+
 
 
 
