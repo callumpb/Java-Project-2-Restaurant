@@ -56,7 +56,7 @@ public class TableTest {
     public void setTableTo0Patrons() {
         table.addPatron(patron);
         assertEquals(1, table.patronCount());
-        table.clearTable(patron);
+        table.clearTable();
         assertEquals(0, table.patronCount());
     }
 

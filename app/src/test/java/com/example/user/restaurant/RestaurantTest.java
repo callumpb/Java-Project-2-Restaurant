@@ -15,7 +15,7 @@ import static org.junit.Assert.assertEquals;
 
 public class RestaurantTest {
     Restaurant restaurant;
-    Table table, table1, table2;
+    Table table, table1, table2, table3;
     Ingredient chicken, salad;
     Dish chickenSaladDish;
     Menu menu;
@@ -39,14 +39,16 @@ public class RestaurantTest {
         this.table = new Table();
         this.table1 = new Table();
         this.table2 = new Table();
+        this.table3 = new Table();
         chickenSaladDish = new Dish("chicken salad", 7);
 
 
         patron1 = new Patron();
         patron2 = new Patron();
-        this.table.addPatron(patron1);
-        this.table.addPatron(patron1);
-        this.table.addPatron(patron1);
+
+        this.table3.addPatron(patron1);
+        this.table3.addPatron(patron1);
+        this.table3.addPatron(patron1);
     }
 
     @Test
@@ -61,7 +63,7 @@ public class RestaurantTest {
 
     @Test
     public void getNumberOfPatrons() {
-        this.restaurant.addTableToTableCount(table);
+        this.restaurant.addTableToTableCount(table3);
         int totalPatrons = this.restaurant.totalNumberOfPatrons();
         assertEquals(3, totalPatrons);
     }
@@ -106,6 +108,20 @@ public class RestaurantTest {
         assertEquals(0, restaurant.tableCount());
     }
 
+    @Test
+    public void canPayBill() {
+//        this.table.clearTable();
+        this.table.addPatron(this.patron1);
+
+        this.patron1.addOrder(this.chickenSaladDish);
+        this.patron1.addOrder(this.chickenSaladDish);
+
+        restaurant.addTableToTableCount(table);
+        restaurant.payBill(0);
+
+        assertEquals(14 ,restaurant.getBudget(), 0.01);
+
+    }
     //is this + Restaurant method needed?
 //    @Test
 //    public void canHaveMenu() {

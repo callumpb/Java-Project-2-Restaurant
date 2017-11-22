@@ -62,16 +62,17 @@ public class Restaurant {
         return sum;
     }
 
-    ////////
 
-//    public float addBillToBudget() {
-//        float sum = 0;
-//        for(Table table : tables) {
-//            sum = sum + table.totalBill();
-//        }
-//        return sum;
-//
-//    }
+    public void payBill(int tableNo) {
+
+        Table table = tables.get(tableNo);
+
+        float totalBill = table.totalBill();
+
+        this.budget += totalBill;
+
+        table.clearTable();
+    }
 
 
 
