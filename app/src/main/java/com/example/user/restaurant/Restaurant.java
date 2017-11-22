@@ -6,8 +6,6 @@ import java.util.ArrayList;
  * Created by user on 17/11/2017.
  */
 
-//NOTES:
-    //MENU menu not connected to Menu class?
 
 public class Restaurant {
 
@@ -15,8 +13,6 @@ public class Restaurant {
     private float budget;
     private ArrayList<Table> tables;
     Menu menu;
-
-
 
     public Restaurant(String name, float budget, Menu menu) {
         this.name = name;
@@ -62,23 +58,26 @@ public class Restaurant {
         return sum;
     }
 
-
+    // pay bill based on the index of the table number
     public void payBill(int tableNo) {
-
+        // setting table variable to index number of table
         Table table = tables.get(tableNo);
-
+        // getting the totalBill of that table/index number
+        // then ensuring it's a float
         float totalBill = table.totalBill();
-
+        // adding that totalBill to the budget
         this.budget += totalBill;
-
+        // clearing the table after paying bill
         table.clearTable();
     }
 
+    
 
 
 
 
-    //is this method needed?
+
+    //is this method even needed?
 //    public Menu getMenu() {
 //        return this.menu;
 //    }

@@ -24,15 +24,6 @@ public class RestaurantTest {
 
     @Before
     public void before() {
-        //Create a few ingredients
-        //Create a few dishes
-        //Create a new menu
-        //Add some dishes to menu
-        //Create new restaurant and pass it the menu
-
-        //Create a few tables
-        //Add tables to restaurant
-        //Add patron
 
         this.menu = new Menu();
         this.restaurant = new Restaurant("Mario's", 0, menu);
@@ -122,7 +113,7 @@ public class RestaurantTest {
         assertEquals(14 ,restaurant.getBudget(), 0.01);
 
     }
-    //is this + Restaurant method needed?
+    //is this + Restaurant method test even needed?
 //    @Test
 //    public void canHaveMenu() {
 //        assertEquals(menu, restaurant.getMenu());
