@@ -62,11 +62,23 @@ public class Restaurant {
         return sum;
     }
 
+    ////////
+
+//    public float addBillToBudget() {
+//        float sum = 0;
+//        for(Table table : tables) {
+//            sum = sum + table.totalBill();
+//        }
+//        return sum;
+//
+//    }
+
+
 
 
 
     //is this method needed?
-//    public com.example.user.restaurant.Menu getMenu() {
+//    public Menu getMenu() {
 //        return this.menu;
 //    }
 

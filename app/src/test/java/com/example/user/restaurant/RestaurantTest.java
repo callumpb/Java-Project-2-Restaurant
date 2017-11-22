@@ -82,17 +82,10 @@ public class RestaurantTest {
         this.patron2.addOrder(chickenSaladDish);
         assertEquals(14, table1.totalBill(), 0.01);
         assertEquals(7, table2.totalBill(), 0.01);
-//        this.patron1.orderTotal();
 
         assertEquals(21, restaurant.getTotalValueOfAllTables(),
                 0.01 );
     }
-
-//    @Test
-//    //the amount that a patron pays for a dish
-//    public void canAddToBudget() {
-//
-//    }
 
     @Test
     public void tableCountIs0() {
