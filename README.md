@@ -2,15 +2,15 @@ Mario's Italian Restaurant
 
 Mario is opening a new restaurant in Edinburgh and needs your help getting it organised.
 
-MVP
+MVP:
 
-The restaurant should have a name and budget
+The restaurant should have a name and budget /n
 Patrons can come and eat at the restaurant. They will be added to a table when they come in to eat.
 Patrons can order from a menu. It should consist of dishes that have prices and ingredients.
 Mario wants to be able to calculate the total price for each table and add it to the budget of the restaurant when the patron pay.
 After paying, patrons are removed from the table to make room for the next ones.
 
-Extensions
+Extensions:
 
 Patrons can split up the bill and pay individually
 Dishes can be customised for dietary needs
