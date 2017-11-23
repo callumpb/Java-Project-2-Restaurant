@@ -91,11 +91,11 @@ public class Restaurant {
         return totalBill;
     }
 
-    //EXTENSION 1 - THIS METHOD NEEDS CHANGING
-    //right now this just uses showSplitEvenBill
-    //method in Table to add the splitTotal to budget.
-    //THE PROBLEM is this will add ONE INDIVIDUAL splitTotal
-    //to the budget and not ALL the individual splitTotals
+    // EXTENSION 1 - THIS METHOD NEEDS CHANGING
+    // right now this just uses showSplitEvenBill
+    // method in Table to add the splitTotal to budget.
+    // THE PROBLEM is this will add ONE INDIVIDUAL splitTotal
+    // to the budget and not ALL the individual splitTotals
     public void paySplitEvenBill(int tableNo) {
         Table table = tables.get(tableNo);
         float splitTotal = table.showSplitEvenBill();
@@ -104,10 +104,10 @@ public class Restaurant {
     }
 
 
-    //is this method even needed?
-//    public Menu getMenu() {
-//        return this.menu;
-//    }
+    // is this method even needed?
+    //  public Menu getMenu() {
+    //      return this.menu;
+    //  }
 
 }
 
