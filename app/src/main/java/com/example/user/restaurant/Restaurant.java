@@ -75,15 +75,14 @@ public class Restaurant {
         table.clearTable();
     }
 
-       // pays bill without using index but the table
+    // pay bill without using index but the table
     public void payBillNoIndex(Table table) {
         float totalBill = table.totalBill();
         this.budget += totalBill;
           table.clearTable();
         }
 
-        // returns total bill without adding to budget
-        // still to be tested
+    // returns total bill without adding to budget
     public float getBill(int tableNo) {
         Table table = tables.get(tableNo);
         float totalBill = table.totalBill();

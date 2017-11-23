@@ -115,6 +115,17 @@ public class RestaurantTest {
     }
 
     @Test
+    public void canGetBill() {
+        this.table.addPatron(this.patron1);
+
+        this.patron1.addOrder(this.chickenSaladDish);
+        restaurant.addTableToTableCount(table);
+        restaurant.getBill(0);
+        assertEquals(7, table.totalBill(), 0.01);
+
+    }
+
+    @Test
     public void canPayBillWithoutIndex() {
         this.table.addPatron(this.patron1);
         this.patron1.addOrder(chickenSaladDish);
