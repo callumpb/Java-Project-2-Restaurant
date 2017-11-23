@@ -16,9 +16,8 @@ public class Restaurant {
 
     public Restaurant(String name, float budget, Menu menu) {
         this.name = name;
-        //this.budget = 1000;
         this.budget = budget;
-        this.tables = new ArrayList<Table>();
+        this.tables = new ArrayList<>();
         this.menu = menu;
 
     }
@@ -62,16 +61,11 @@ public class Restaurant {
         return sum;
     }
 
-    // pay bill based on the index of the table number
+
     public void payBill(int tableNo) {
-        // setting table variable to index number of table
         Table table = tables.get(tableNo);
-        // getting the totalBill of that table/index number
-        // then ensuring it's a float
         float totalBill = table.totalBill();
-        // adding that totalBill to the budget
         this.budget += totalBill;
-        // clearing the table after paying bill
         table.clearTable();
     }
 

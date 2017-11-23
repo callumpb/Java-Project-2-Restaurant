@@ -10,7 +10,7 @@ public class Patron {
     private ArrayList<Dish> order;
 
     public Patron() {
-        this.order = new ArrayList<Dish>();
+        this.order = new ArrayList<>();
     }
 
     public int totalOrders() {
@@ -25,7 +25,7 @@ public class Patron {
         order.remove(dish);
     }
 
-    //test needed
+
     public float orderTotal() {
         float sum = 0;
         for(Dish dish : order) {

@@ -10,7 +10,7 @@ public class Table {
     private ArrayList<Patron> patrons;
 
     public Table() {
-        this.patrons = new ArrayList<Patron>();
+        this.patrons = new ArrayList<>();
     }
 
     public int patronCount() {

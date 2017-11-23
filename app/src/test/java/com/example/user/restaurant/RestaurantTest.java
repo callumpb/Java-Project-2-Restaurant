@@ -16,7 +16,6 @@ import static org.junit.Assert.assertEquals;
 public class RestaurantTest {
     Restaurant restaurant;
     Table table, table1, table2, table3;
-    Ingredient chicken, salad;
     Dish chickenSaladDish;
     Menu menu;
     Patron patron1, patron2;
