@@ -20,6 +20,7 @@ public class Restaurant {
         this.budget = budget;
         this.tables = new ArrayList<Table>();
         this.menu = menu;
+
     }
 
     public String getName() {
@@ -73,17 +74,34 @@ public class Restaurant {
         // clearing the table after paying bill
         table.clearTable();
     }
-       //pays bill without using index but the table
-       public void payBillNoIndex(Table table) {
+
+       // pays bill without using index but the table
+    public void payBillNoIndex(Table table) {
         float totalBill = table.totalBill();
         this.budget += totalBill;
           table.clearTable();
         }
 
+        // returns total bill without adding to budget
+        // still to be tested
+    public float getBill(int tableNo) {
+        Table table = tables.get(tableNo);
+        float totalBill = table.totalBill();
 
+        return totalBill;
+    }
 
-
-
+    //EXTENSION 1 - THIS METHOD NEEDS CHANGING
+    //right now this just uses showSplitEvenBill
+    //method in Table to add the splitTotal to budget.
+    //THE PROBLEM is this will add ONE INDIVIDUAL splitTotal
+    //to the budget and not ALL the individual splitTotals
+    public void paySplitEvenBill(int tableNo) {
+        Table table = tables.get(tableNo);
+        float splitTotal = table.showSplitEvenBill();
+        this.budget += splitTotal;
+        table.clearTable();
+    }
 
 
     //is this method even needed?

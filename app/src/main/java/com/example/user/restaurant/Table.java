@@ -29,6 +29,7 @@ public class Table {
         patrons.clear();
     }
 
+
     public float totalBill() {
         float sum = 0;
         for(Patron patron : patrons) {
@@ -36,6 +37,20 @@ public class Table {
         }
         return sum;
     }
+
+    // EXTENSION 1 - THIS METHOD MAY NEED CHANGING
+    //
+    // Would be used by e.g. waiter to DISPLAY even split
+    // before using payBill
+    // UPDATE: added paySplitEvenBill in Restaurant
+    public float showSplitEvenBill() {
+        float totalSplitBill = this.totalBill() / this.patronCount();
+        System.out.println(totalSplitBill);
+        return totalSplitBill;
+
+    }
+
+
 
 
 }
