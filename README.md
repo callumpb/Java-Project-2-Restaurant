@@ -33,8 +33,8 @@ Moving forward I would like to work on finishing the split bill extensions and p
 
 ## Problems encountered/lessons learned:
 
--Initially, I was attempting to do too much functionality in a single method. Learned to split up methods into smaller chunks so that they are not only easier to understand/create, but also allows for code to be reused and tested more easily. If code is more reusable, it certainly cuts down on development time later in a project.
+- Initially, I was attempting to do too much functionality in a single method. Learned to split up methods into smaller chunks so that they are not only easier to understand/create, but also allows for code to be reused and tested more easily. If code is more reusable, it certainly cuts down on development time later in a project.
 
--Test Driven Development (TDD) was initally very hard to understand for me. I couldn't quite grasp the concept. After this project I massively increased my understanding of testing (e.g. files like RestaurantTest.java had much more testing required than I was used to, so it taught me quite a lot)
+- Test Driven Development (TDD) was initally very hard to understand for me. I couldn't quite grasp the concept. After this project I massively increased my understanding of testing (e.g. files like RestaurantTest.java had much more testing required than I was used to, so it taught me quite a lot)
 
 
